@@ -1,0 +1,80 @@
+def alper(arr):
+    try:
+        sayac = 0
+        while True:
+            x = arr[sayac]
+            sayac += 1
+    except:
+        print(sayac)
+
+
+def alper2(arr):
+    try:
+        sayac = 0
+        while True:
+            x = arr[sayac]
+            sayac += 1
+    except:
+        pass
+    return sayac
+
+
+
+
+from main import *
+A= [['Doğa','İrem','Benan','Aslı','Benan','Aslı'],
+['Doğa','İrem','Benan','Aslı'],
+['Doğa','İrem','Benan','Aslı','Benan']]
+
+
+B=['Doğa','İrem','Benan','Aslı','Benan','Aslı']
+for i in B:
+    print(i)
+sayac=0
+for i in A:
+    for dizi in A:
+        for isim in dizi:
+            print(isim)
+            sayac+=1
+            print(sayac)
+
+y=alper(A)
+print(y)
+print(type(y))
+
+z=alper2(A)
+print(z)
+print(type(z))
+
+
+from asli import *
+import random
+while True:
+    rsi_= random.randint(1,100)
+    print(rsi_)
+    trade(rsi_)
+
+
+
+import time
+
+def trade(rsi):
+    if rsi<20:
+        print('-----------ALIM YAPILDI')
+    elif rsi>80:
+        print('-----------SATIŞ YAPILDI')
+#kazandığını random oluştur(1 ile 10 arası)
+        time.sleep(1)
+#altin_al fonksiyonuna kazandığıı goster
+        time.sleep(1)
+
+    else:
+        print('====POZİSYONUNU KORU====')
+
+def math(a,b):
+    try:
+        print(a//b)
+    except:
+        print('sayıyı sıfıra böldün sonuc = 0')
+
+
